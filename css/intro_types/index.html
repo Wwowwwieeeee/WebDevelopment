@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types</title>
+</head>
+<style>
+    /*Internal CSS */
+    ul{
+        background-color: aquamarine;
+        color: blue;
+    }
+    dt {
+        color: blue;
+    }
+</style>
+    <!--External CSS-->
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1> Introduction to CSS</h1>
+    <H5> CSS stands for Cascading Style Sheet. It is used to style the .html files. There are three different types of
+        CSS. They are:
+        <ul>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ul>
+    </H5>
+    <div>
+    <dl>
+        <dt>Inline CSS</dt>
+        <dd>
+            <pre>Inline CSS is the type of CSS which is used in .html files. It is defined in .html files by using style attributes.
+            For example: In html files:
+                <!--Inline CSS-->
+                 <span style="background-color: red; color: white;"> &lt;h1 style="background colour="red" colour="white""&gt; Introduction &lt;/h1&gt; </span>             
+        </pre>
+        </dd>
+    </dl>
+    </div>
+
+    <div>
+    <dl>
+        <dt>Internal CSS</dt>
+        <dd>
+            <pre>Internal CSS is alsso declare in .html files above the body tag. It is used when the code is short. Otherwise it will make the actual html code long which makes it hard to understand and maintain.
+            <!-- Inline CSS-->
+            <p style="background-color: red; color: white;">  For example:
+            &lt;head&gt;
+              &lt;title&gt;Introduction&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;style&gt;
+               div{
+                background-colour="Blue";
+                colour="white";
+               } 
+            &lt;/style&gt;
+            </p>         
+        </pre>
+        </dd>
+    </dl>
+    </div>
+
+    <div>
+    <dl>
+        <dt>External CSS</dt>
+        <dd>
+            <pre> External CSS is declared in seperate file using extension ".css" and add all your styles in that file. Then you attach these .css file in html file by using: 
+            <!--Inline CSS-->
+            <span style="background-color: red; color: white;"> "&lt;link rel="stylesheet" href=""&gt;"</span>
+        </pre>
+        </dd>
+    </dl>
+    </div>
+
+    <footer> **Note** Inline CSS has background color red and color white whereas Internal CSS has colour blue. All aqua colour and also this note is fron external CSS. </footer>
+</body>
+
+</html>

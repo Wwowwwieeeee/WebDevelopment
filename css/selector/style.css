@@ -1,0 +1,74 @@
+td, th {
+    border: 2px solid black;
+}
+
+thead{
+    background-color: aquamarine;
+}
+
+tbody{
+    background-color:rgb(99, 146, 130);
+}
+
+table{
+    text-align: center;
+}
+
+/* class selector*/
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* class selector*/
+.float{
+    float: right;
+}
+
+/*id selector*/
+#list{
+    color: blueviolet;
+}
+
+/*Element Selector*/
+h1 {
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;   /*font property to make it bold*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /*font property to change the font*/
+}
+
+/* child selector*/
+div > p{
+    background-color: red;
+}
+
+/* descendent selector*/
+div p {
+    color: blue;
+}
+
+/*pseudo selector*/
+a:visited{  /*visit vaisake paxiko colour*/
+    color: red;
+}
+a:hover{
+    background-color: yellow;
+}
+
+p:first-child{  /* p jaha jaha first child ho tya matra apply huney*/
+    font-style: italic;
+}
+/*universal selector means applying to all
+syntax: *{
+            marginn=0;
+            }*/
+
+
+

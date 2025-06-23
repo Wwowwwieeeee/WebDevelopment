@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tags</title>
+</head>
+<body>
+    <form action="post">
+        <h2>Form to get enroll in Eliza Consulatancy</h2>
+        <!---Input tag to take the the username-->
+        <div>
+            <label for="name"> Name: </label>
+        <input type="text" autofocus id="name" name="useername" placeholder="Enter your username">
+        </div>
+        
+        <!--Input tag to get password of the user-->
+        <div>
+            <label for="password"> Password:</label>
+            <input type="password" required id="password" name="password" placeholder="Enter you password">
+        </div>
+
+        <!--Input tag to get the gender of the user-->
+        <div>
+            <label for="gender"> Gender: </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female"> Female</label>
+        </div>
+
+        <!--input tag for checksum tag to toggle on or off-->
+        <div>
+            <label for="subscribe">Subscribe to Eliza: </label>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+        </div>
+
+        <!--Checksome tag to select multiple option-->
+        <div>
+            <label for="hobby"> Hobbies:</label>
+            <input type="checkbox" id="reading" name="interest" value="reading">
+            <label for="reading"> Reading </label>
+            <input type="checkbox" name="interest" id="dancing" value="dancing">
+            <label for="dancing"> Dancing </label>
+            <input type="checkbox" name="interest" id="singing" value="singing">
+            <label for="singing"> Singing </label>
+            <input type="checkbox" name="interest" id="gaming" value="gaming">
+            <label for="gaming"> Gaming </label>
+            <input type="checkbox" name="interest" id="others" value="others">
+            <label for="others"> Others </label>
+        </div>
+
+        <!--input tag foe selecting from an option-->
+        <div>
+            <label for="country"> Country: </label>
+            <select name="country" id="country">
+                <option value="nepal"> Nepal</option>
+                <option value="china"> China </option>
+                <option value="india"> India </option>
+                <option value="bangladesh"> Bangladesh </option>
+                <option value="others"> Other</option>
+            </select>
+        </div>
+
+        <!--input tag for textarea element-->
+        <div>
+            <form action="/submit">
+                <label for="comment">Comment: </label>
+                <textarea name="comment" id="comment" rows="3" cols="30" placeholder="Enter your comment"> </textarea>
+
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </form>
+</body>
+</html>
